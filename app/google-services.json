@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838774049118",
+    "firebase_url": "https://projekt-gazetka.firebaseio.com",
+    "project_id": "projekt-gazetka",
+    "storage_bucket": "projekt-gazetka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838774049118:android:70c2776ee51c09e3",
+        "android_client_info": {
+          "package_name": "com.example.gazetkapl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838774049118-9ecssnabh4m9vulmr5v73mh4ks357sd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2C1qdu5DyXu7dzwe4StX-GNY9ulSIjYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838774049118-9ecssnabh4m9vulmr5v73mh4ks357sd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
