@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity
         Intent intencja = new Intent(this, Main3Activity.class);
         startActivity(intencja);
     }
+    public void mapa(View v)
+    {
+        Intent intencja = new Intent(this, MapsActivity.class);
+        startActivity(intencja);
+    }
 
 
     @Override
