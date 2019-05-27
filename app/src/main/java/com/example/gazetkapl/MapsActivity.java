@@ -21,6 +21,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -78,7 +79,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         else
         {
 
-            mMap.setMyLocationEnabled(true);
+            //mMap.setMyLocationEnabled(true);
             fusedLocationProviderClient=LocationServices.getFusedLocationProviderClient(this);
             final Task location = fusedLocationProviderClient.getLastLocation();
             location.addOnCompleteListener(new OnCompleteListener() {
@@ -89,6 +90,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             currentLocation.getLongitude()),15F));
                 N = currentLocation.getLatitude();
                 E = currentLocation.getLongitude();
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(currentLocation.getLatitude(),
+                            currentLocation.getLongitude())).visible(true).title("Jesteś tutaj!").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
                 searchShops(N,E);
                 }
             });
@@ -108,13 +111,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
     void searchShops(double N2, double E2)
     {
-        String napis = "Lidl chopina";
+       // String napis = "Lidl szczecin";
+        String napis = "Biedronka szczecin";
         Geocoder geocenter = new Geocoder(this);
         List<Address> lista = null;
 
         try
         {
-            lista = geocenter.getFromLocationName(napis,2, (N2- 0.022), (E2-0.018 ),  (N2+ 0.022),(E2+0.018));
+            lista = geocenter.getFromLocationName(napis,2, (N2- 0.030), (E2-0.030 ),  (N2+ 0.030),(E2+0.030));
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -126,7 +130,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         {
             sklep = lista.get(i);
             s = new LatLng(sklep.getLatitude(),sklep.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(s).title("Lidl!"));
+            mMap.addMarker(new MarkerOptions().position(s).title("Biedronka!"));
         }
     }
 
