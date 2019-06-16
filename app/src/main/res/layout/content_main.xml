@@ -9,231 +9,99 @@
     tools:showIn="@layout/app_bar_main">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="421dp"
-        android:layout_height="35dp"
-        android:background="@color/colorAccent"
+        android:id="@+id/mainn"
+        android:layout_width="461dp"
+        android:layout_height="689dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="92dp"
-            android:layout_height="26dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="4dp"
-            android:text="Kategorie"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Kategorie" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="92dp"
-            android:layout_height="26dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp"
-            android:text="Najnowsze"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Najnowsze" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="92dp"
-            android:layout_height="26dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="4dp"
-            android:text="Ulubione"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ulubione" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="77dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="4dp"
-            android:onClick="mapa"
-            android:text="Sklepy"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Sklepy" />
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout5"
-        android:layout_width="395dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-
-        android:background="@color/colorPrimaryDark"
-        android:onClick="pdf"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="130dp"
-            android:layout_height="145dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="132dp"
-                android:layout_height="143dp"
-                android:src="@mipmap/pobrane2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </android.support.constraint.ConstraintLayout>
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="173dp"
-            android:layout_height="137dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="72dp"
-            android:layout_marginRight="72dp"
-            android:layout_marginBottom="8dp"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="488dp"
+            android:layout_height="581dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/bg_all"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="52dp"
-                android:layout_height="23dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Lidl"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="40dp"
-                android:text="Ważność: 3.04-6.04"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </android.support.constraint.ConstraintLayout>
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout6"
-        android:layout_width="395dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@color/colorPrimaryDark"
-        android:onClick="pdf2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="130dp"
-            android:layout_height="145dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59000003"
+            app:srcCompat="@mipmap/backg_all" />
 
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="129dp"
-                android:layout_height="147dp"
-                android:src="@mipmap/pobrane"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/pobrane"
-                tools:srcCompat="@mipmap/pobrane" />
-        </android.support.constraint.ConstraintLayout>
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="173dp"
-            android:layout_height="137dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="72dp"
-            android:layout_marginRight="72dp"
+        <ImageView
+            android:id="@+id/Left_bg"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
             android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/left_but_bg"
+            android:onClick="about_us"
+            app:layout_constraintBottom_toTopOf="@+id/Bg_all_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/backg_cat_left" />
+
+        <ImageView
+            android:id="@+id/Right_bg"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="@string/right_but_bg"
+            android:onClick="shops"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintStart_toEndOf="@+id/Left_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/backg_cat_right" />
 
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="88dp"
-                android:layout_height="23dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Biedronka"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/About_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/A_txt"
+            android:text="@string/A_txt"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Left_bg"
+            app:layout_constraintEnd_toEndOf="@+id/Left_bg"
+            app:layout_constraintStart_toStartOf="@+id/Left_bg"
+            app:layout_constraintTop_toTopOf="@+id/Left_bg" />
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Ważność: 3.04-12.04"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17" />
-        </android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/Shops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SHP_txt"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Right_bg"
+            app:layout_constraintEnd_toEndOf="@+id/Right_bg"
+            app:layout_constraintStart_toStartOf="@+id/Right_bg"
+            app:layout_constraintTop_toTopOf="@+id/Right_bg"
+            tools:text="@string/SHP_txt" />
 
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="395dp"
-        android:layout_height="288dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
-        tools:layout_editor_absoluteX="8dp">
-
-
-
+        <ImageView
+            android:id="@+id/Bg_all_image"
+            android:layout_width="375dp"
+            android:layout_height="574dp"
+            android:layout_marginStart="460dp"
+            android:layout_marginTop="87dp"
+            android:contentDescription="@string/girl_img"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/lady" />
 
     </android.support.constraint.ConstraintLayout>
 

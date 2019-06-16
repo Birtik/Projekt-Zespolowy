@@ -12,7 +12,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.pdf_2);
 
         pdfviewer=(PDFView)findViewById(R.id.pdfviewer);
         pdfviewer.fromAsset("demo2.pdf").load();

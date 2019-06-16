@@ -24,5 +24,20 @@
         completions."
     </string>
     <string name="pdf">pdf</string>
+    <string name="bg_all">Bg_all</string>
+    <string name="right_but_bg">Right_but_bg</string>
+    <string name="left_but_bg">Left_but_bg</string>
+    <string name="AU_txt">AU_txt</string>
+    <string name="SHP_txt">Sklepy</string>
+    <string name="A_txt">O nas</string>
+    <string name="Serch_bg">Serch_bg</string>
+    <string name="girl_img">girl_img</string>
+    <string name="img_bg">img_bg</string>
+    <string name="map_bt">map_bt</string>
+    <string name="back_bt">back_bt</string>
+    <string name="back_button">Powrót</string>
+    <string name="lidl_img">lidl_img</string>
+
+    <string name="title_activity_about_us">about_us</string>
 
 </resources>
